@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+<!--{% for i in data %}-->
+<!--{{i.name}}<br>-->
+<!--{{i.priority}}<br><br>-->
+<!--{% endfor %}-->
+
+{% block content %}
+
+<div class="shadow card">
+    <div class="card-body">
+        <div class="card-title">
+            <h5>{{task.name}}</h5>
+            <p><b>{{task.priority}}</b></p>
+            <p><b>{{task.date}}</b></p>
+            <a class="btn btn-danger" href="{%url 'delete' task.id %} ">Delete</a>
+            <a class="btn btn-success" href="{%url 'update' task.id %} ">Update</a>
+
+        </div>
+
+    </div>
+</div>
+{% endblock %}

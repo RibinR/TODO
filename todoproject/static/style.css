@@ -1,0 +1,17 @@
+.banner
+{
+background-color:dimgray;
+width:100%;
+height:200px;
+margin-bottom:50px;
+}
+
+.banner-text
+{
+
+top:15%;
+left:47%;
+position:absolute;
+transform:transform;
+
+}
